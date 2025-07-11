@@ -7,7 +7,7 @@ const AppContextProvider = (props) => {
 
 
     const currencySymbol = '₹'
-    const backendUrl =`localhost`
+    const backendUrl =`https://cureconnect-backend-uhdt.onrender.com`
     const [doctors,setDoctors] =useState([])
     const [token,setToken] = useState(localStorage.getItem('token') ? localStorage.getItem('token') : false)
     const [userData, setUserData] = useState(false)

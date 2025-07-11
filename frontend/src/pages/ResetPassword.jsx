@@ -14,7 +14,7 @@ const ResetPassword = () => {
     setLoading(true);
     try {
       const { data } = await axios.post(
-        `${`localhost`}/api/user/reset-password/${token}`,
+        `${`https://cureconnect-backend-uhdt.onrender.com`}/api/user/reset-password/${token}`,
         { password }
       );
       if (data.success) {

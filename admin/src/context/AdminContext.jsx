@@ -9,7 +9,7 @@ const AdminContextProvider = (props) => {
 
     const [aToken,setAToken] = useState(localStorage.getItem('aToken') ? localStorage.getItem('aToken') : '')
 
-    const backendUrl = `localhost`
+    const backendUrl = `https://cureconnect-backend-uhdt.onrender.com`
 
     const [doctors,setDoctors] =useState([])
     const [appointments,setAppointments] = useState([])
